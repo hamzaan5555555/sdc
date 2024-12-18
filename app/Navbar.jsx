@@ -1,9 +1,23 @@
 "use client"
-import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {
+    Modal,
+    ModalContent,
+    ModalHeader,
+    ModalBody,
+    ModalFooter,
+    Button,
+    useDisclosure, NavbarContent, NavbarItem,
+} from "@nextui-org/react";
+import {NavbarBrand} from "@nextui-org/navbar";
+import {Navbar} from "@nextui-org/navbar";
+import Link from "next/link";
 
+import TextWrite from "../app/Card";
  function Navbaar() {
-    return (
+     const {isOpen, onOpen, onOpenChange} = useDisclosure();
+
+
+     return (
         <Navbar position="static">
             <NavbarBrand>
 
@@ -29,9 +43,10 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nex
             <NavbarContent justify="end">
 
                 <NavbarItem>
-                    <a href="/Contact" >
+                    <Link href='/Contact'  >
                     <Button  className="rounded-3xl bg-gray-100 hover:bg-black hover:text-white">
                         LET'S TALK
+
                         <div className="rounded-3xl py-2 px-2  bg-emerald-400">
                             <svg width="15" className="font-bold" height="15" viewBox="0 0 15 15" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +56,10 @@ import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nex
                             </svg>
                         </div>
                     </Button>
-                    </a>
+
+
+
+                    </Link>
                 </NavbarItem>
             </NavbarContent>
         </Navbar>

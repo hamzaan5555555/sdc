@@ -87,7 +87,7 @@ function Exeemple() {
                 </div>
             </div>
             <div className="text-center mt-10">
-                <Button radius="full" className=" bg-black text-white shadow-lg font-semibold hover:bg-gray-300 hover:text-black">
+                <Button href="/More" radius="full" className=" bg-black text-white shadow-lg font-semibold hover:bg-gray-300 hover:text-black">
                     Show More <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
                                    xmlns="http://www.w3.org/2000/svg">
                     <path

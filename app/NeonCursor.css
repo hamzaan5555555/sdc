@@ -1,0 +1,35 @@
+/* NeonCursor.css */
+
+.neon-cursor-container {
+    position: fixed;
+    pointer-events: none; /* Permet de cliquer sur les éléments en dessous */
+    z-index: 9999; /* Assure que le curseur est au-dessus des autres éléments */
+}
+
+.cursor-main {
+    width: 20px; /* Taille du curseur principal */
+    height: 20px; /* Taille du curseur principal */
+    border-radius: 50%; /* Forme circulaire */
+    background: rgba(255, 150, 50, 0.8); /* Couleur de fond */
+    box-shadow: 0 0 10px rgba(255, 150, 50, 0.8), 0 0 20px rgba(255, 150, 50, 0.6); /* Effet de néon */
+    transition: transform 0.9s ease; /* Transition pour le mouvement */
+}
+
+.cursor-trail {
+    width: 10px; /* Taille de la traînée */
+    height: 10px; /* Taille de la traînée */
+    border-radius: 50%; /* Forme circulaire */
+    background: rgba(255, 150, 50, 0.5); /* Couleur de la traînée */
+    box-shadow: 0 0 10px rgba(255, 150, 50, 0.5); /* Effet de néon pour la traînée */
+    transition: transform 0.1s ease; /* Transition pour le mouvement */
+}
+
+.cursor-glow {
+    width: 30px; /* Taille de l'effet de lueur */
+    height: 30px; /* Taille de l'effet de lueur */
+    border-radius: 50%; /* Forme circulaire */
+    background: transparent; /* Pas de couleur de fond */
+    border: 2px solid rgba(255, 150, 50, 0.8); /* Bordure de lueur */
+    box-shadow: 0 0 20px rgba(255, 150, 50, 0.8), 0 0 30px rgba(255, 150, 50, 0.6); /* Effet de néon */
+    transition: transform 0.1s ease; /* Transition pour le mouvement */
+}
